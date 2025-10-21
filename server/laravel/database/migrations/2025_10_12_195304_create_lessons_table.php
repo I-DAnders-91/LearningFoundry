@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('year_group', 20);
             $table->date('date');
             $table->string('success_criteria')->nullable();
-            $table->text('activities')->nullable();
+            $table->text('activities');
             $table->json('useful_links')->nullable();
             $table->timestamps();
         });
